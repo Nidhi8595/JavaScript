@@ -1,0 +1,52 @@
+console.log("Vaiables are the containers")
+console.log("JS allows changing the value as well as the data type of variables at run time -")
+let a = 67 // here the value of a is 67
+console.log(a)
+a = "Hey there"  // now it becomes Hey there
+console.log(a)
+// Rules are :-
+// Letters, digits, underscores & $ sign allowed
+// can't start with digits 
+// reserved words( keywords) are not used
+// case sensitive
+// let 5=a  will throw an error
+
+// Difference b/w var, let, const
+// 'const' is used for declaring constant values to a container that can neither be updated nor declared again
+// 'var' is used for doing these two purposes
+// 'let' is used in cases where we can update the value of variable but can not re-declare it
+
+// using var
+var b = 5
+{
+    var b = "this is the new value b holds"
+    console.log(b)
+}
+console.log(b) // since b is redeclared it will also print the new b value
+
+// using let
+let c = "Good Morning"
+{
+    let c = "Hello"
+    console.log(c)
+}
+console.log(c) // in this case it still holds the original value
+
+// the main reason for the above differences is that var has a global scope while let has a scope limited to block
+
+// const variables must be defined at the time of declaration and can't be initialized with null value 
+// const d = 0 will throw an error
+// const d
+// d=0  will also throw an error
+
+{
+    let d
+    d = 7
+    console.log(d)
+}
+{
+    var e
+    e = 8
+    console.log(e)
+}
+// these two cases are valid
