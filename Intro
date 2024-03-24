@@ -1,0 +1,8 @@
+// console.log("Hello world");
+console.log("This program adds three numbers ");
+function addThreeNumbers(a, b, c)  // defining a function
+{
+    return a + b + c;
+}
+let c = addThreeNumbers(1, 4, 8);
+console.log(c);
