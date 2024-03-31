@@ -1,0 +1,24 @@
+console.log("Practice set for variables, data types & objects ->")
+
+let a = "First variable "
+let b = 7
+
+console.log("Concatenation -> ", a + b)    // Q1
+
+console.log(a, "is a ", typeof (a + b))    // Q2
+
+// Q3  :- Defining an object
+const obj = {
+    name: "Nidhi",
+    Section: "B"
+}
+
+// obj = 8  will give an error since assigning to a constant object obj
+
+// Q4 :- adding new key to obj
+obj['course'] = "B.Tech C.S."
+console.log(obj)   // done
+
+// modifying value at a key :-
+obj['name'] = "Neelakshi"
+console.log(obj)
