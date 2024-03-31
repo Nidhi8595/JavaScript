@@ -1,0 +1,63 @@
+console.log("Operators ->")
+
+console.log("1) Arithmetic :-")
+let a = 45
+let b = 4
+
+console.log(a, " / ", b, " -> ", a / b)
+console.log(a, " * ", b, " -> ", a * b)
+console.log(a, " + ", b, " -> ", a + b)
+console.log(a, " - ", b, " -> ", a - b)
+console.log(a, " % ", b, " -> ", a % b)
+console.log("4 ** 3  -> ", 4 ** 3)
+
+// Post increment & decrement :-
+console.log(b, "++ -> ", b++)
+console.log(a, "-- -> ", a--)
+console.log(b)
+console.log(a)
+
+// Pre increment & decrement :-
+console.log("++", b, " -> ", ++b)
+console.log("--", a, " -> ", --a)
+console.log("\n")
+
+console.log("2) Assignment :-")
+a = 7
+
+console.log("Shorthand assignment expressions -> ")
+console.log(a)
+// a += 1
+// console.log(a)
+console.log(a, "+= 1 -> ", (a += 1))
+console.log(a, "-= 2 -> ", (a -= 2))
+console.log(a, "*= 3 -> ", (a *= 3))
+console.log(a, "/= 2 -> ", (a /= 2))
+console.log(a, "**= 2 -> ", (a **= 2))
+console.log(a, "%= 2 -> ", (a %= 2))
+console.log("\n")
+
+console.log("3) Comparison :-")  // returns a boolean value
+a = 6
+b = 7
+let c = "Hey"
+let d = 6
+
+console.log(a, " == ", b, " -> ", a == b)
+console.log(a, " != ", b, " -> ", a != b)
+console.log(a, " === ", c, " -> ", a === c)  // compares the value as well as type
+console.log(a, " !== ", c, " -> ", a !== c)
+console.log(a, " > ", b, " -> ", a > b)
+console.log(a, " < ", b, " -> ", a < b)
+console.log(a, " >= ", d, " -> ", a >= d)
+console.log(a, " <= ", d, " -> ", a <= d)
+console.log("\n")
+
+console.log("4) Logical :-")  // returns a boolean value
+a = 5
+b = 6
+
+console.log(a, ">", b, " && ", a, " == 5 ->", (a > b) && (a == 5))
+console.log(a, ">", b, " || ", a, " == 5 ->", (a > b) || (a == 5))
+console.log("!false -> ", !false)
+console.log("!true -> ", !true)
