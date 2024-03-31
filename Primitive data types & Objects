@@ -1,0 +1,35 @@
+console.log("Primitive data types -> ")
+let a = null;
+let b = 2;      // numbers
+let c = false;  // boolean
+let d = BigInt("234");
+let e = "Hey";  // string
+let f = Symbol(" This is a symbol");
+let g = undefined;   // let g;
+
+// console.log(a, '\n', b, '\n', c, '\n', d, '\n', e, '\n', f, '\n', g, '\n');
+
+// finding the type of a variable :-
+console.log(a, "is a -> ", typeof a);
+console.log(b, "is a -> ", typeof b);
+console.log(c, "is a -> ", typeof c);
+console.log(d, "is a -> ", typeof d);
+console.log(e, "is a -> ", typeof e);
+console.log(f, "is a -> ", typeof f);
+console.log(g, "is a -> ", typeof g);
+
+
+console.log("Objects/ Non primitives->");
+// defined like a dictionary :-
+const obj = {
+    "A": true,
+    "B": false,
+    "C": undefined,
+    "D": null,
+    "E": 7,
+    "F": "Hello"
+}
+
+// accessing the values mapped to particular keys :-
+console.log(obj["A"]);
+console.log(obj["E"]);
