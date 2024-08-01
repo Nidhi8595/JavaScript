@@ -1,0 +1,39 @@
+const prompt = require("prompt-sync")();
+let Marks = {
+  A: 99,
+  B: 59,
+  C: 97,
+  D: 100,
+  E: 72,
+};
+
+// Q 1
+for (let i = 0; i < Object.keys(Marks).length; i++) {
+  console.log(
+    "The marks of " +
+      Object.keys(Marks)[i] +
+      " are " +
+      Marks[Object.keys(Marks)[i]],
+  );
+}
+
+// Q 2
+for (let j in Marks) {
+  console.log("The marks of " + j + " are " + Marks[j]);
+}
+
+// Q 3
+let cn = 43;
+let i;
+while (i != cn) {
+  console.log("Try again");
+  i = prompt("Enter a number");
+}
+console.log("You have entered a correct number");
+
+// Q 4
+const mean = (a, b, c, d) => {
+  return (a + b + c + d) / 4;
+};
+
+console.log(mean(4, 5, 6, 7));
