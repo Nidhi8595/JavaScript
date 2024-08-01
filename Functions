@@ -1,0 +1,35 @@
+const prompt = require("prompt-sync")();
+// functions :- a block of code that performs a specified task
+function average(x, y) {
+  console.log("Done");
+  return (x + y) / 2;
+}
+
+let a = prompt("Enter first number -> ");
+a = Number.parseInt(a);
+
+let b = prompt("Enter second number -> ");
+b = Number.parseInt(b);
+
+let avg1 = average(a, b);
+console.log("The average of ", a, " & ", b, " is -> ", avg1);
+
+// Another way to define function
+let Product = (x, y) => {
+  return x * y;
+};
+
+let c = prompt("Enter first number -> ");
+c = Number.parseInt(c);
+
+let d = prompt("Enter second number -> ");
+d = Number.parseInt(d);
+
+console.log("The product of ", c, " & ", d, " is-> ", Product(c, d));
+
+// Function not having any arguments
+const hi = () => {
+  console.log("Hey! How are you");
+};
+
+hi();
