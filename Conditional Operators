@@ -1,0 +1,18 @@
+const prompt = require("prompt-sync")();
+
+console.log("Conditional Operators :-");
+let a = prompt("Hey whats your age?");
+a = Number.parseInt(a);
+console.log("Age -> ", a);
+if (a < 0) {
+    console.log("Invalid age");
+} else if (a < 9) {
+    console.log("Inappropriate age");
+} else if (a < 18 && a >= 9) {
+    console.log("Still not suitable");
+} else {
+    console.log("Valid age");
+}
+
+// ternary operator
+console.log("You can ", a < 18 ? "not Drive" : "Drive");
