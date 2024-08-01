@@ -1,0 +1,31 @@
+const prompt = require("prompt-sync")();
+// For  loop
+let a = prompt("Enter a number ");
+a = Number.parseInt(a);
+for (let i = 1; i <= a; i++) {
+  console.log(i);
+}
+// For in loop :- iterates every Key-Pair of an object or any data structure
+let obj = {
+  1: "Black",
+  2: "Blue",
+  3: "Yellow",
+  4: "Lavender",
+  5: "White",
+};
+for (let i in obj) {
+  console.log(obj[i]);
+}
+
+// For of loop :- iterates every index of a string or an array
+for (let b of "Hey There") {
+  console.log(b);
+}
+
+// Implementation
+let n2 = prompt("Enter the number upto which you wanna find Sum -> ");
+let sum = 0;
+for (let i = 1; i <= n2; i++) {
+  sum += i;
+}
+console.log("The sum of first", n2, "natural numbers is", sum);
